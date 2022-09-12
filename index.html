@@ -14,31 +14,51 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
+    <div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#navbar">Home</a></li>
+          <li><a href="#middle-container">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education-container"> Qualification</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="top-container">
       <img id="top-cloud" src="images/cloud.png" alt="cloud" />
       <h1><em> I'm Pruthviraj.</em></h1>
       <h2 class="tagline">a programmer.</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud" />
-      <img src="images/mountain.png" alt="cloud" />
+      <div class="bottom-cloud-div">
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud" />
+      </div>
+
+      <!-- <img src="images/profile.png" alt="cloud" width="10%" /> -->
     </div>
 
-    <div class="middle-container">
-      <div class="profile">
+    <div id="middle-container">
+      <div id="profile" data-aos="fade-up">
         <img
+          class="profile-pic"
           src="images/pruthvi-modified.png"
           alt="profile-pic"
           width="150px"
         />
         <h2>Hey!</h2>
-        <p>
-          I'm a tech enthusiast, cse student at RCPIT. I have a passion for web
-          development and love to code.
+        <p class="about-me">
+          I'm a tech enthusiast, pursuing Computer Science Engineering at RCPIT,
+          Shirpur. I am always ready to have new experiences, meet new people
+          and learn new things. I find the idea of creating value for people and
+          impacting the world through my work gratifying. I have a passion for
+          web development and love to code.
         </p>
       </div>
       <hr />
-      <div class="skills">
+      <div id="skills" data-aos="fade-up">
         <h2>My Skills.</h2>
         <div class="skill-row">
           <img
@@ -110,7 +130,42 @@
         <br />
       </div>
       <hr />
-      <div class="contact-me">
+      <div id="education-container" data-aos="fade-up">
+        <h2 class="education-h1">Qualification</h2>
+        <p>My personal journey</p>
+
+        <div class="education">
+          <div>
+            <h3>Education</h3>
+          </div>
+
+          <div class="bachelor-edu">
+            <h4>Bachelors in Technology</h4>
+            <p>Computer science</p>
+            <p>R.C.Patel Institute of Technologyy, Shirpur</p>
+          </div>
+          <div class="seperator">
+            <hr class="seperator-dot" />
+            <hr class="seperator-line" />
+            <hr class="seperator-dot" />
+          </div>
+          <div class="intermediate-edu">
+            <h4>Intermediate</h4>
+            <p>S.L.Mali Jr College of Arts & Science,Taloda</p>
+          </div>
+          <div class="seperator">
+            <hr class="seperator-dot" />
+            <hr class="seperator-line" />
+            <hr class="seperator-dot" />
+          </div>
+          <div class="matriculation-edu">
+            <h4>Matriculation</h4>
+            <p>Nemsushil Madhyamik Vidyamandir, Taloda</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="contact-me" data-aos="fade-up">
         <h2 class="">Get In Touch</h2>
         <h3>If you love to code as much I do.</h3>
         <p>Love code as much I do? Let's talk on awesome project ideas!</p>
@@ -118,12 +173,13 @@
         <a class="btn" href="mailto: chaudharipruthviraj888@gmail.com"
           >CONTACT ME</a
         >
-        <div>
-          <a class="scroll-up-button" href="#top-cloud"
-            ><img src="images/scroll.png" alt="^" width="20px" />
-          </a>
-        </div>
       </div>
+      <div>
+        <a class="scroll-up-button" href="#navbar"
+          ><img src="images/scroll.png" alt="^" width="20px" />
+        </a>
+      </div>
+      <br />
     </div>
 
     <div class="bottom-container">
@@ -144,7 +200,14 @@
       /></a>
       <!-- <a class="footer-link" href="https://pruthviraj-chaudhari.github.io/Pruthviraj-portfolio/"><img src="images/website.png" alt="" width="25px"></a> -->
       <br /><br /><br />
-      <p>© 2022 Pruthviraj Chaudhari. All rights reserved.</p>
+      <p class="copyright">© 2022 Pruthviraj Chaudhari. All rights reserved.</p>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>
