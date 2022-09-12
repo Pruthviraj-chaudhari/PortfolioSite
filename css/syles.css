@@ -1,8 +1,10 @@
 body {
   margin: 0;
+  margin-top: 20px;
   text-align: center;
-  font-family: "Merriweather", serif;
+  /* font-family: Georgia, Times, "Times New Roman", sans-serif; */
   /* background-color: #dbdffd; */
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -16,7 +18,7 @@ h1 {
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   color: #615dcc;
 }
 
@@ -25,8 +27,14 @@ h3 {
   color: #615dcc;
 }
 
+h4 {
+  margin: 0;
+}
+
 p {
-  margin-bottom: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
 }
 
 hr {
@@ -42,18 +50,29 @@ hr {
   font-size: 2.5rem;
   font-weight: normal;
   color: white;
+  margin: 0;
 }
 
 .top-container {
+  margin-top: 0;
   background-color: #6a67ce;
   position: relative;
   padding-top: 100px;
+  border-top-left-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  padding-bottom: 150px;
 }
 
-.middle-container {
+.about-me {
+  text-align: justify;
+  padding: 0 20%;
+  line-height: 1.5;
+  font-size: 20px;
+  color: gray;
 }
 
-.bottom-container {
+.copyright {
+  color: white;
 }
 
 #top-cloud {
@@ -63,21 +82,29 @@ hr {
 }
 
 .bottom-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
+  position: relative;
+  right: 400px;
+  top: 25px;
 }
 
-.profile {
+.bottom-cloud-div {
+  height: 100px;
+}
+
+#profile {
   margin: 100px auto 100px auto;
 }
 
-.skills {
+.profile-pic {
+  width: 25%;
+}
+
+#skills {
   margin: 100px auto 100px auto;
 }
 
 .skill-row {
-  margin: 100px auto 100px auto;
+  margin: 60px auto;
   width: 50%;
   text-align: left;
   line-height: 1.5;
@@ -116,7 +143,7 @@ hr {
   margin-bottom: 20px;
 }
 
-.contact-me {
+#contact-me {
   margin: 100px auto 100px auto;
 }
 
@@ -156,11 +183,11 @@ hr {
 
 .btn:hover {
   background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, black, black);
-  background-image: -moz-linear-gradient(top, black, black);
-  background-image: -ms-linear-gradient(top, black, black);
-  background-image: -o-linear-gradient(top, black, black);
-  background-image: linear-gradient(to bottom, black, black);
+  background-image: -webkit-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -moz-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -ms-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -o-linear-gradient(top, #5652d3, #5652d3);
+  background-image: linear-gradient(to bottom, #5652d3, #5652d3);
   text-decoration: none;
 }
 
@@ -183,12 +210,90 @@ hr {
   width: 15px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .scroll-up-button:hover {
   background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, black, black);
-  background-image: -moz-linear-gradient(top, black, black);
-  background-image: -ms-linear-gradient(top, black, black);
-  background-image: -o-linear-gradient(top, black, black);
-  background-image: linear-gradient(to bottom, black, black);
+  background-image: -webkit-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -moz-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -ms-linear-gradient(top, #5652d3, #5652d3);
+  background-image: -o-linear-gradient(top, #5652d3, #5652d3);
+  background-image: linear-gradient(to bottom, #5652d3, #5652d3);
   text-decoration: none;
+}
+
+#education-container {
+  margin: 100px auto;
+}
+
+.education-h1 {
+  margin: 0 auto;
+}
+
+.education {
+  margin: 50px auto;
+}
+
+.bachelor-edu {
+  margin-top: 50px;
+  margin-bottom: 1px;
+}
+
+.intermediate-edu {
+  margin-bottom: 1px;
+}
+
+.matriculation-edu {
+  margin-bottom: 1px;
+}
+
+.seperator-line {
+  height: 150px;
+  width: 1px;
+
+  border-style: none;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #6a67ce;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 50%;
+}
+
+.seperator-dot {
+  height: 0;
+  width: 10px;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 10px;
+  border-color: #6a67ce;
+  margin: 0 auto;
+}
+
+#navbar {
+  height: 50px;
+  /* width:100%; */
+  margin-top: -16px;
+  background-color: white;
+}
+#navbar li {
+  margin: auto 20px auto 0;
+  float: left;
+  padding-top: 5px;
+  list-style: none;
+  text-decoration: none;
+}
+
+#navbar li a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #6a67ce;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#navbar li a:hover {
+  color: black;
 }
