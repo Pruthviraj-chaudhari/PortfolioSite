@@ -31,6 +31,15 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  margin: 0;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-weight: lighter;
+}
+
 p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -54,7 +63,7 @@ hr {
 }
 
 .top-container {
-  margin-top: 0;
+  margin-top: 100px;
   background-color: #6a67ce;
   position: relative;
   padding-top: 100px;
@@ -272,28 +281,36 @@ html {
   margin: 0 auto;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 3% 0rem 3%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
 #navbar {
-  height: 50px;
+  height: 250%;
   /* width:100%; */
   margin-top: -16px;
   background-color: white;
 }
-#navbar li {
-  margin: auto 20px auto 0;
+#navbar a {
+  margin: 1px 20px 3px 10px;
   float: left;
   padding-top: 5px;
-  list-style: none;
-  text-decoration: none;
-}
-
-#navbar li a {
-  margin-top: 20px;
   text-decoration: none;
   color: #6a67ce;
   font-size: 15px;
   font-weight: bolder;
 }
 
-#navbar li a:hover {
-  color: black;
+#navbar a:hover {
+  color: #5652d3;
 }
